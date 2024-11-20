@@ -1,0 +1,58 @@
+.dashboard__left__all {
+  position: fixed; /* Panelni qotirib qo'yish */
+  left: 0;
+  bottom: 0;
+  width: 20%;
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.dashboard__right {
+  right: 0;
+  top: 80px;
+  position: absolute;
+}
+
+.dashboard__all {
+  display: flex;
+}
+
+.dashboard__left__all {
+  width: 20%;
+  height: 95vh;
+}
+
+.dashboard__left,
+.you {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 30px 20px;
+}
+
+.border {
+  border: 1px solid #cccccc;
+}
+.dashboard__right {
+  width: 80%;
+  height: auto;
+  padding: 30px 20px;
+}
+
+.dashbord__style {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  h3 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #0f0f0f;
+  }
+}
+
+.icon {
+  color: #605e5e;
+  font-size: 18px;
+}

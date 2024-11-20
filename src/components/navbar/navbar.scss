@@ -1,0 +1,75 @@
+.header {
+  padding: 10px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+  z-index: 29;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav__input {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  .form {
+    width: 500px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid #cccccc;
+
+    input {
+      width: 90%;
+      height: 100%;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      padding-left: 12px;
+    }
+
+    button {
+      width: 10%;
+      border: none;
+      height: 100%;
+      border-radius: 0 20px 20px 0px;
+    }
+  }
+
+  .micrafon {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+  }
+}
+
+.nav__icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.sign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 80px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+// .icon {
+//   // color: #605e5e;
+//   // font-size: 11px;
+// }
