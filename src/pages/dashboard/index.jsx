@@ -9,9 +9,12 @@ import { faCircleUser } from "@fortawesome/free-solid-svg-icons";
 import { faIdCardClip } from "@fortawesome/free-solid-svg-icons";
 import { faFaceFrown } from "@fortawesome/free-solid-svg-icons";
 import "./dashboard.scss";
+import Navbar from "../../components/navbar";
 function Dashboard() {
   return (
     <div className="dashboard__all">
+      <Navbar />
+
       <div className="dashboard__left__all">
         <div className="dashboard__left">
           <Link className="dashbord__style" to={"/dashboard"}>
