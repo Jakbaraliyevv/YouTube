@@ -1,6 +1,5 @@
 import React from "react";
 import { createBrowserRouter } from "react-router-dom";
-import Dashboard from "../pages/dashboard";
 import Group from "../components/groups";
 import Student from "../components/students";
 import Sub from "../components/sub";
@@ -8,13 +7,15 @@ import You from "../components/you";
 import History from "../components/hostory";
 import Explor from "../components/explor";
 import Libery from "../components/libery";
+import Dashboard from "../pages/dashboard";
 
 const root = createBrowserRouter([
   {
-    path: "/",
+    path: "/dashboard",
     element: <Dashboard />,
     children: [
-      { path: "/", element: <Group /> },
+      { index: true, element: <Group /> },
+      { path: "groups", element: <Group /> },
       { path: "students", element: <Student /> },
       { path: "sub", element: <Sub /> },
       { path: "you", element: <You /> },

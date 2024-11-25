@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
@@ -11,6 +11,8 @@ import { faFaceFrown } from "@fortawesome/free-solid-svg-icons";
 import "./dashboard.scss";
 import Navbar from "../../components/navbar";
 function Dashboard() {
+  const navigate = useNavigate();
+
   return (
     <div className="dashboard__all">
       <Navbar />
@@ -18,7 +20,8 @@ function Dashboard() {
       <div className="dashboard__left__all">
         <div className="dashboard__left">
           <Link className="dashbord__style" to={"/dashboard"}>
-            <FontAwesomeIcon icon={faHouse} className="icon" /> <h3>Home</h3>
+            <FontAwesomeIcon icon={faHouse} className="icon" />
+            <h3>Home</h3>
           </Link>
           <Link className="dashbord__style" to={"/dashboard/explor"}>
             <FontAwesomeIcon icon={faCompass} className="icon" />
